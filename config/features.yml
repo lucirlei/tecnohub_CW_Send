@@ -15,7 +15,7 @@
   enabled: false
   premium: true
 - name: email_continuity_on_api_channel
-  enabled: true
+  enabled: false
 - name: help_center
   enabled: true
   help_url: https://chwt.app/hc/help-center
@@ -71,12 +71,12 @@
   enabled: true
   premium: true
 - name: message_reply_to
-  enabled: false
+  enabled: true
   help_url: https://chwt.app/hc/reply-to
 - name: insert_article_in_reply
-  enabled: false
+  enabled: true
 - name: inbox_view
-  enabled: false
+  enabled: true
 - name: sla
   enabled: true
   premium: true
