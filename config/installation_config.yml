@@ -14,7 +14,7 @@
 
 # ------- Branding Related Config ------- #
 - name: INSTALLATION_NAME
-  value: 'Chatwoot'
+  value: 'ChatHub360'
   display_title: 'Installation Name'
   description: 'The installation wide name that would be used in the dashboard, title etc.'
 - name: LOGO_THUMBNAIL
@@ -30,23 +30,23 @@
   display_title: 'Logo Dark Mode'
   description: 'The logo that would be used on the dashboard, login page etc. for dark mode'
 - name: BRAND_URL
-  value: 'https://www.chatwoot.com'
+  value: 'https://www.tecnohub360.com.br'
   display_title: 'Brand URL'
   description: 'The URL that would be used in emails under the section "Powered By"'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.chatwoot.com'
+  value: 'https://www.tecnohub360.com.br'
   display_title: 'Widget Brand URL'
   description: 'The URL that would be used in the widget under the section "Powered By"'
 - name: BRAND_NAME
-  value: 'Chatwoot'
+  value: 'TecnoHub360'
   display_title: 'Brand Name'
   description: 'The name that would be used in emails and the widget'
 - name: TERMS_URL
-  value: 'https://www.chatwoot.com/terms-of-service'
+  value: 'https://www.tecnohub360.com.br/terms-of-service'
   display_title: 'Terms URL'
   description: 'The terms of service URL displayed in Signup Page'
 - name: PRIVACY_URL
-  value: 'https://www.chatwoot.com/privacy-policy'
+  value: 'https://www.tecnohub360.com.br/privacy-policy'
   display_title: 'Privacy URL'
   description: 'The privacy policy URL displayed in the app'
 - name: DISPLAY_MANIFEST
@@ -175,7 +175,7 @@
   value: 'enterprise'
   description: 'The pricing plan for the installation, retrieved from the billing API'
 - name: INSTALLATION_PRICING_PLAN_QUANTITY
-  value: 10000
+  value: 100000
   description: 'The number of licenses purchased for the installation, retrieved from the billing API'
 - name: CHATWOOT_SUPPORT_WEBSITE_TOKEN
   value:
