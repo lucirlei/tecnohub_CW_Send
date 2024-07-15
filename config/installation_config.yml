@@ -51,7 +51,7 @@
   description: 'The privacy policy URL displayed in the app'
 - name: DISPLAY_MANIFEST
   value: true
-  display_title: 'Chatwoot Metadata'
+  display_title: 'Chathub360 Metadata'
   description: 'Display default Chatwoot metadata like favicons and upgrade warnings'
   type: boolean
 # ------- End of Branding Related Config ------- #
@@ -66,7 +66,7 @@
 - name: CREATE_NEW_ACCOUNT_FROM_DASHBOARD
   value: true
   description: 'Allow users to create new accounts from the dashboard'
-  locked: false
+  locked: true
 - name: HCAPTCHA_SITE_KEY
   value:
   locked: false
