@@ -14,13 +14,12 @@
 </template>
 
 <script>
-import alertMixin from 'shared/mixins/alertMixin';
+import { useAlert } from 'dashboard/composables';
 import { mapGetters } from 'vuex';
 import WebhookForm from './WebhookForm.vue';
 
 export default {
   components: { WebhookForm },
-  mixins: [alertMixin],
   props: {
     value: {
       type: Object,
@@ -45,15 +44,15 @@ export default {
           webhook,
           id: this.id,
         });
-        this.showAlert(
+        useAlert(
           this.$t('INTEGRATION_SETTINGS.WEBHOOK.EDIT.API.SUCCESS_MESSAGE')
         );
         this.onClose();
       } catch (error) {
         const alertMessage =
-        error?.response?.data?.message ||
+          error?.response?.data?.message ||
           this.$t('INTEGRATION_SETTINGS.WEBHOOK.EDIT.API.ERROR_MESSAGE');
-        this.showAlert(alertMessage);
+        useAlert(alertMessage);
       }
     },
   },
