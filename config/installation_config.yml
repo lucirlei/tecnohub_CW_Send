@@ -64,7 +64,7 @@
   locked: false
   type: boolean
 - name: CREATE_NEW_ACCOUNT_FROM_DASHBOARD
-  value: false
+  value: true
   description: 'Allow users to create new accounts from the dashboard'
   locked: false
 - name: HCAPTCHA_SITE_KEY
@@ -200,7 +200,7 @@
   locked: false
   description: 'Redirect to a different link after logout'
 - name: DISABLE_USER_PROFILE_UPDATE
-  value: false
+  value: true
   locked: false
   description: 'Disable rendering profile update page for users'
 ## ------ End of Configs added for enterprise clients ------ ##
