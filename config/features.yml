@@ -10,7 +10,7 @@
 - name: channel_twitter
   enabled: true
 - name: ip_lookup
-  enabled: true
+  enabled: false
 - name: disable_branding
   enabled: false
   premium: true
@@ -20,7 +20,7 @@
   enabled: true
   help_url: https://chwt.app/hc/help-center
 - name: agent_bots
-  enabled: true
+  enabled: false
   help_url: https://chwt.app/hc/agent-bots
 - name: macros
   enabled: true
@@ -62,9 +62,9 @@
 - name: auto_resolve_conversations
   enabled: true
 - name: custom_reply_email
-  enabled: true
+  enabled: false
 - name: custom_reply_domain
-  enabled: true
+  enabled: false
 - name: audit_logs
   enabled: false
   premium: true
@@ -72,14 +72,14 @@
   enabled: false
   premium: true
 - name: message_reply_to
-  enabled: true
+  enabled: false
   help_url: https://chwt.app/hc/reply-to
 - name: insert_article_in_reply
-  enabled: true
+  enabled: false
 - name: inbox_view
-  enabled: true
+  enabled: false
 - name: sla
-  enabled: true
+  enabled: false
   premium: true
   help_url: https://chwt.app/hc/sla
 - name: help_center_embedding_search
@@ -92,9 +92,9 @@
 - name: hide_all_chats_for_agent
   enabled: false
 - name: hide_contacts_for_agent
-  enabled: true
+  enabled: false
 - name: hide_filters_for_agent
-  enabled: true
+  enabled: false
 - name: send_agent_name_in_whatsapp_message
   enabled: true
 - name: read_message
@@ -110,11 +110,11 @@
 - name: channel_notifica_me
   enabled: false
 - name: channel_sms
-  enabled: true
+  enabled: false
 - name: channel_whatsapp
   enabled: true
 - name: channel_telegram
-  enabled: true
+  enabled: false
 - name: channel_line
   enabled: false
 - name: channel_api
