@@ -10,15 +10,14 @@ on:
     branches:
       - develop
       - main
-      #- team
     tags:
       - v*
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    #runs-on: self-hosted
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       GIT_REF: ${{ github.head_ref || github.ref_name }} # ref_name to get tags/branches
     steps:
