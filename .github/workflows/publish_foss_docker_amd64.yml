@@ -9,16 +9,16 @@ on:
   push:
     branches:
       - develop
-      - master
-      - team
+      - main
+      #- team
     tags:
       - v*
   workflow_dispatch:
 
 jobs:
   build:
-    #runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    #runs-on: self-hosted
     env:
       GIT_REF: ${{ github.head_ref || github.ref_name }} # ref_name to get tags/branches
     steps:
@@ -34,7 +34,7 @@ jobs:
 
       - name: set docker tag
         run: |
-          echo "DOCKER_TAG=sendingtk/chatwoot:$GIT_REF" >> $GITHUB_ENV
+          echo "DOCKER_TAG=lucirleisantos/tecnohub-cw-sendig:$GIT_REF" >> $GITHUB_ENV
 
       - name: replace docker tag if master
         if: github.ref_name == 'master'
