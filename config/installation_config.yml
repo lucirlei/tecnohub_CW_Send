@@ -14,44 +14,44 @@
 
 # ------- Branding Related Config ------- #
 - name: INSTALLATION_NAME
-  value: 'Chatwoot'
+  value: 'ChatHub360'
   display_title: 'Installation Name'
   description: 'The installation wide name that would be used in the dashboard, title etc.'
 - name: LOGO_THUMBNAIL
-  value: '/brand-assets/logo_thumbnail.svg'
+  value: '/brand-assets/logo_thumbnail.png'
   display_title: 'Logo Thumbnail'
   description: 'The thumbnail that would be used for favicon (512px X 512px)'
 - name: LOGO
-  value: '/brand-assets/logo.svg'
+  value: '/brand-assets/logo.png'
   display_title: 'Logo'
   description: 'The logo that would be used on the dashboard, login page etc.'
 - name: LOGO_DARK
-  value: '/brand-assets/logo_dark.svg'
+  value: '/brand-assets/logo_dark.png'
   display_title: 'Logo Dark Mode'
   description: 'The logo that would be used on the dashboard, login page etc. for dark mode'
 - name: BRAND_URL
-  value: 'https://www.chatwoot.com'
+  value: 'https://www.tecnohub360.com.br'
   display_title: 'Brand URL'
   description: 'The URL that would be used in emails under the section "Powered By"'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.chatwoot.com'
+  value: 'https://www.tecnohub360.com.br'
   display_title: 'Widget Brand URL'
   description: 'The URL that would be used in the widget under the section "Powered By"'
 - name: BRAND_NAME
-  value: 'Chatwoot'
+  value: 'TecnoHub360'
   display_title: 'Brand Name'
   description: 'The name that would be used in emails and the widget'
 - name: TERMS_URL
-  value: 'https://www.chatwoot.com/terms-of-service'
+  value: 'https://www.tecnohub360.com.br/termos-de-serviço'
   display_title: 'Terms URL'
   description: 'The terms of service URL displayed in Signup Page'
 - name: PRIVACY_URL
-  value: 'https://www.chatwoot.com/privacy-policy'
+  value: 'https://www.tecnohub360.com.br/politica-de-privacidade'
   display_title: 'Privacy URL'
   description: 'The privacy policy URL displayed in the app'
 - name: DISPLAY_MANIFEST
   value: true
-  display_title: 'Chatwoot Metadata'
+  display_title: 'ChatHub360 Metadata'
   description: 'Display default Chatwoot metadata like favicons and upgrade warnings'
   type: boolean
 # ------- End of Branding Related Config ------- #
@@ -64,9 +64,9 @@
   locked: false
   type: boolean
 - name: CREATE_NEW_ACCOUNT_FROM_DASHBOARD
-  value: false
+  value: true
   description: 'Allow users to create new accounts from the dashboard'
-  locked: false
+  locked: true
 - name: HCAPTCHA_SITE_KEY
   value:
   locked: false
@@ -113,7 +113,7 @@
 - name: FACEBOOK_API_VERSION
   display_title: 'Facebook API Version'
   description: 'Configure this if you want to use a different Facebook API version. Make sure its prefixed with `v`'
-  value: 'v20.0'
+  value: 'v18.0'
   locked: false
 - name: ENABLE_MESSENGER_CHANNEL_HUMAN_AGENT
   display_title: 'Enable human agent'
@@ -132,13 +132,6 @@
   display_title: 'Azure App Secret'
   locked: false
 # End of Microsoft Email Channel Config
-
-# MARK: UNOAPI Channel Config
-- name: UNOAPI_AUTH_TOKEN
-  value:
-  display_title: 'UNO API Auth Token'
-  description: 'The Auth Token for UNO API. Find more details on how to configure UNOAPI here: https://github.com/clairton/unoapi-cloud/tree/main'
-# End of UNOAPI Channel Config
 
 # ------- Chatwoot Internal Config for Cloud ----#
 - name: CHATWOOT_INBOX_TOKEN
@@ -207,7 +200,7 @@
   locked: false
   description: 'Redirect to a different link after logout'
 - name: DISABLE_USER_PROFILE_UPDATE
-  value: false
+  value: true
   locked: false
   description: 'Disable rendering profile update page for users'
 ## ------ End of Configs added for enterprise clients ------ ##
@@ -231,13 +224,3 @@
   value:
   description: 'Customize conversation, put your valid css'
 ## ------ End of Configs custom ------ ##
-## ----- Captain Configs ----- ##
-- name: CAPTAIN_API_URL
-  value: 
-  display_title: 'Captain API URL'
-  description: 'The API URL for Captain'
-- name: CAPTAIN_APP_URL
-  value: 
-  display_title: 'Captain App URL'
-  description: 'The App URL for Captain'
-## ----- End of Captain Configs ----- ##
