@@ -1,3 +1,4 @@
+
 # This file contains all the installation wide configuration which controls various settings in Chatwoot
 # This is internal config and should not be modified by the user directly in database
 # Chatwoot might override and modify these values during the upgrade process
@@ -22,11 +23,11 @@
   display_title: 'Logo Thumbnail'
   description: 'The thumbnail that would be used for favicon (512px X 512px)'
 - name: LOGO
-  value: '/brand-assets/logo.png'
+  value: '/brand-assets/tecnohub_LOGO_SF  APP.png'
   display_title: 'Logo'
   description: 'The logo that would be used on the dashboard, login page etc.'
 - name: LOGO_DARK
-  value: '/brand-assets/logo_dark.png'
+  value: '/brand-assets/tecnohub_LOGO_SF  APP.png'
   display_title: 'Logo Dark Mode'
   description: 'The logo that would be used on the dashboard, login page etc. for dark mode'
 - name: BRAND_URL
@@ -38,20 +39,20 @@
   display_title: 'Widget Brand URL'
   description: 'The URL that would be used in the widget under the section "Powered By"'
 - name: BRAND_NAME
-  value: 'TecnoHub360'
+  value: 'Tecnohub360'
   display_title: 'Brand Name'
   description: 'The name that would be used in emails and the widget'
 - name: TERMS_URL
-  value: 'https://www.tecnohub360.com.br/termos-de-serviço'
+  value: 'https://www.tecnohub360.com.br/terms-of-service'
   display_title: 'Terms URL'
   description: 'The terms of service URL displayed in Signup Page'
 - name: PRIVACY_URL
-  value: 'https://www.tecnohub360.com.br/politica-de-privacidade'
+  value: 'https://www.tecnohub360.com.br/privacy-policy'
   display_title: 'Privacy URL'
   description: 'The privacy policy URL displayed in the app'
 - name: DISPLAY_MANIFEST
   value: true
-  display_title: 'ChatHub360 Metadata'
+  display_title: 'Chatwoot Metadata'
   description: 'Display default Chatwoot metadata like favicons and upgrade warnings'
   type: boolean
 # ------- End of Branding Related Config ------- #
@@ -64,9 +65,9 @@
   locked: false
   type: boolean
 - name: CREATE_NEW_ACCOUNT_FROM_DASHBOARD
-  value: true
+  value: false
   description: 'Allow users to create new accounts from the dashboard'
-  locked: true
+  locked: false
 - name: HCAPTCHA_SITE_KEY
   value:
   locked: false
@@ -113,7 +114,7 @@
 - name: FACEBOOK_API_VERSION
   display_title: 'Facebook API Version'
   description: 'Configure this if you want to use a different Facebook API version. Make sure its prefixed with `v`'
-  value: 'v18.0'
+  value: 'v20.0'
   locked: false
 - name: ENABLE_MESSENGER_CHANNEL_HUMAN_AGENT
   display_title: 'Enable human agent'
@@ -132,6 +133,13 @@
   display_title: 'Azure App Secret'
   locked: false
 # End of Microsoft Email Channel Config
+
+# MARK: UNOAPI Channel Config
+- name: UNOAPI_AUTH_TOKEN
+  value:
+  display_title: 'UNO API Auth Token'
+  description: 'The Auth Token for UNO API. Find more details on how to configure UNOAPI here: https://github.com/clairton/unoapi-cloud/tree/main'
+# End of UNOAPI Channel Config
 
 # ------- Chatwoot Internal Config for Cloud ----#
 - name: CHATWOOT_INBOX_TOKEN
@@ -200,7 +208,7 @@
   locked: false
   description: 'Redirect to a different link after logout'
 - name: DISABLE_USER_PROFILE_UPDATE
-  value: true
+  value: false
   locked: false
   description: 'Disable rendering profile update page for users'
 ## ------ End of Configs added for enterprise clients ------ ##
@@ -219,8 +227,18 @@
 ## ------ End of Configs added for FCM v1 notifications ------ ##
 
 ## ------ Configs custom ------ ##
-- name: CONVESATION_STYLE_CSS
+- name: CONVERSATION_STYLE_CSS
   display_title: 'Conversation Style CSS'
   value:
   description: 'Customize conversation, put your valid css'
 ## ------ End of Configs custom ------ ##
+## ----- Captain Configs ----- ##
+- name: CAPTAIN_API_URL
+  value: 
+  display_title: 'Captain API URL'
+  description: 'The API URL for Captain'
+- name: CAPTAIN_APP_URL
+  value: 
+  display_title: 'Captain App URL'
+  description: 'The App URL for Captain'
+## ----- End of Captain Configs ----- ##
